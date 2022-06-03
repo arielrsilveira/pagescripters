@@ -1,1 +1,30 @@
-Olar
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <button id="btn">Botao</button>
+</body>
+<script>
+    var teste = null;
+
+    function a(params) {
+        var jj = {
+            nome: "Ariel",
+            sobrenome: "Silveira",
+            idade: 25
+        };
+        return JSON.stringify(jj);
+    }
+
+    $(document).ready(function() {
+        $('#btn').click(function() {
+            console.log(a());
+        })
+    });
+</script>
+
+</html>
